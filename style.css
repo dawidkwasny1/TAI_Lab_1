@@ -5,24 +5,29 @@ li{
     display: inline;
     margin: 5px 25px 25px 0
 }
-div.form{
+div{
     display: block;
-    text-align: center;
+    
 }
-.field{
-    width: 270px;
-    align-self: center;
-}
+
 form{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
-fieldset {
+fieldset.field {
     display: block;
-    border: 2px solid #999;
+    border: 2px solid #000;
     border-radius: 5px;
     padding: 8px;
-    box-shadow: 0 0 8px #999;
+    box-shadow: 0 0 8px #000;
+    height: auto;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
+div.radios{
+    text-align: justify;
+}

@@ -8,37 +8,40 @@
     <div class="form">
         <fieldset class="field">
             <legend>Uzupelnij dane</legend>
-            <div class="main-group">
+            <div class="main-form">
                 <div class="form-group">
                     <label for="nameInput">Imie:</label>
-                    <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Podaj imie">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Podaj imie">
                 </div>
                 <div class="form-group">
                     <label for="surnameInput">Nazwisko:</label>
-                    <input type="text" class="form-control" id="surnameInput" aria-describedby="emailHelp" placeholder="Podaj nazwisko">
+                    <input type="text" class="form-control" id="surnameInput" placeholder="Podaj nazwisko">
                 </div>
                 <div class="form-group">
                     <label for="nameInput">E-mail:</label>
-                    <input type="text" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Podaj email">
+                    <input type="text" class="form-control" id="emailInput" placeholder="Podaj email">
                 </div>
                 <div class="form-group">
+                    <label>Płeć:</label>
                     <div class="radios">
-                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-                        <label class="form-check-label" for="male">Mezczyzna</label>
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="female" checked>
-                        <label class="form-check-label" for="female">Kobieta</label>
+                        <input class="inp" type="radio" name="gender" id="male" value="male" checked>
+                        <label class="lab" for="male">Mezczyzna</label>
+                        <input class="inp" type="radio" name="gender" id="female" value="female" unchecked>
+                        <label class="lab" for="female">Kobieta</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="description">Opis</label>
-                    <textarea class="form-control" id="description" rows="3"></textarea>
+                    <textarea class="form-control" id="description" rows="4"></textarea>
                 </div>
-                <div>
-                    <label>Wiek</label> <br>
-                    <input type="number" name="age" value="val" checked>
+                <div class="form-group">
+                    <label for="age">Wiek:</label>
+                    <div class="form-group">
+                        <input type="number" name="age" value="val" min=1>
+                    </div>                    
                 </div>
-                <div class="state">
-                    <label>Stan cywilny</label>
+                <div class="form-group">
+                    <label>Stan cywilny:</label>
                     <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                         <option selected>Panna/Kawaler</option>
