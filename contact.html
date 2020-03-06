@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <fieldset class="field">
+            <legend>Uzupelnij dane</legend>
+            <div class="main-group">
+                <div class="form-group">
+                    <label for="nameInput">Imie:</label>
+                    <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Podaj imie">
+                </div>
+                <div class="form-group">
+                    <label for="surnameInput">Nazwisko:</label>
+                    <input type="text" class="form-control" id="surnameInput" aria-describedby="emailHelp" placeholder="Podaj nazwisko">
+                </div>
+                <div class="form-group">
+                    <label for="nameInput">E-mail:</label>
+                    <input type="text" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Podaj email">
+                </div>
+                <div class="form-group">
+                    <div class="radios">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                        <label class="form-check-label" for="male">Mezczyzna</label>
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female" checked>
+                        <label class="form-check-label" for="female">Kobieta</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description">Opis</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <div>
+                    <label>Wiek</label> <br>
+                    <input type="number" name="age" value="val" checked>
+                </div>
+                <div class="state">
+                    <label>Stan cywilny</label>
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Panna/Kawaler</option>
+                        <option>Mezatka/Zonaty</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="reset" class="btn btn-primary">Wyczysc</button>
+                    <button type="submit" class="btn btn-primary">Wyslij</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
