@@ -38,3 +38,6 @@ div.radios{
     height: 2.5rem;    
     padding-bottom: 2.5rem;
 }
+.navbar{
+    justify-content: center;
+}
