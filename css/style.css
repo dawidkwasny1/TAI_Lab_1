@@ -41,3 +41,9 @@ div.radios{
 .navbar{
     justify-content: center;
 }
+.scroll{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
