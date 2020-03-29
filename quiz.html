@@ -10,6 +10,50 @@
 <body>
     <div class = "navbar">
     </div>
+
+    <div id="list" class="container list" style="display: block">
+        Question: <h4 class="question"></h4>
+    
+        Answers:
+        <ul class="list-group">
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+        </ul>
+    
+        <div class="buttons">
+            <button id="previous" class="btn btn-danger previous">Previous</button>
+            <button id="next" class="btn btn-success next">Next</button>
+        </div>
+    
+        <h4>Your score: <span class="score">0</span>/20 points.
+            Question number: <span id="index">1</span></h4>
+    </div>
+    <div id="results" class="container results" style="display: none">
+        <div class="btn-group-custom">
+            <button class="btn btn-success btn-custom restart">Retake quiz</button>
+        </div>
+        <div class="score">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Point/20</th>
+                    <th>Average</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Your score</th>
+                    <td id="userScorePoint" class="userScorePoint"></td>
+                    <td id="average" class="average"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <div class="scroll">
         <button class="btn btn-success">
             <i class="fa fa-arrow-circle-up" aria-hidden="true"> Do góry</i>
@@ -20,5 +64,6 @@
     </footer>
     <script src="js/navbar.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
